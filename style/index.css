@@ -1,55 +1,223 @@
 @import url(./reset.css);
 
 
+body{
+  background: #c9cacf;
+}
+
 /* Header */
-.header{
-  background: #737373;
-background: -webkit-linear-gradient(92deg, #737373 0%, #000000 100%);
-background: linear-gradient(92deg, #737373 0%, #000000 100%);
-}
-.link{
+#h1Container{
   display: flex;
-  align-items: end;
-  justify-content: flex-end;
-  padding: 2%;
+  margin-top: 15pt;
+
+  justify-content: center;
+  align-items: center;
+
 }
-.link ul li{
-  text-decoration: none;
-  font-size: 15pt;
+.header {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	height: 18%;
+  background: #ffffff;
+  background: -webkit-linear-gradient(90deg, #ffffff 0%, #000000 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #000000 100%);
+  
 }
-.nav-bar ul li a{
-  width: 100%;
-  padding: 15pt;
-  text-decoration: none;
-  text-align: center;
-  font-size: 25px;
-  color: aliceblue;
-  font-family: 'Courier New', Courier, monospace;
-  transition: 0.25s;
-  border-radius: 10%;
+
+.logo img {
+  margin-left: 2.3em;
+  max-width: 100%;
+  height: auto !important;
 }
-.nav-bar ul li a:hover{
-  background-color: rgb(255, 255, 255, 0.2);
-  color: aliceblue;
-  transition: 0.25s;
+
+#nav-bar #link {
+	display: flex;
+    flex-flow: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+    list-style-type: none;
+    padding: 10px;
 }
-#logo{
-  width:50px;
+
+#link li a {
+  padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+  transition: .25s;
 }
+
+#link li a:hover {
+  padding: 10px 20px;
+	background: #8f8f8f;
+	color: #fff;
+  transition: .25s
+}
+
+
+
+
 
 h1{
   font-size: 40pt;
   padding: 10px;
   text-align: center;
   margin-bottom: 1%;
+  text-transform: uppercase;
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  color: #26272b;
+  width: 30%;
+  background-color: aliceblue;
+  border:groove 10px #333;
 }
 
+@media screen and (max-width:900px) {
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    }
+    #link li a {
+      padding: 0px 10px;
+      }
+h1{
+  width: max-content;
+  padding: none;
+  font-size: 30pt;
+}
+ #nav-bar #link {
+ display:flex;
+ align-items: center;
 
 
+}
+.logo{
+  display: none;
+}
+
+#link li {
+ width: max-content;
+
+}
+
+ #link li a {
+     display: flex;
+     width: max-content;
+     justify-content: right;
+     color: azure;
+}
+#link li a:hover {
+	color: #333;
+	background: #fff;
+}
+
+h1{
+  width: 60%;
+}     
+
+}
+
+#section1 #h2container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section1 h2{
+  padding: 10px;
+  text-align: center;
+  font-size: 25pt;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-top:7px groove #26272b ;
+  border-bottom:7px groove #26272b ;
+  margin-top: 1%;
+}
+
+#section1 #pcontainer{
+  font-size: 15pt;
+  padding: 10pt;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  word-spacing: 3px;
+}
+#pcontainer p{
+  width: 70%;
+  font-weight: 500;
+}
+#pcontainer{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+}
+article p{
+  padding: 10px;
+  font-size: 15pt;
+  font-style: italic;
+  font-weight:700;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+article ul div{
+  padding: 30px;
+  text-align: center;
+}
+article ul div li #licontainer{
+  width: 50%;
+  float: left;
+  order: 0;
+} 
+article ul li{
+  /* list-style-type: circle; */
+  font-size: 20px;
+  padding: 10pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article ul li:nth-child(1){
+  border-top: #fff 5px solid;
+}
+article ul li:nth-child(even){
+  border-bottom: #fff 5px solid;
+}
+article ul li:nth-child(odd){
+  border-bottom: #333 5px solid;
+}
+
+article ul div li picture{
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article ul div li a{
+  color: #007bb6;
+}
+
+main{
+  padding: 10px;
+}
+
+#section2 #h2container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section2 h2{
+  padding: 10px;
+  text-align: center;
+  font-size: 25pt;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-top:7px groove #26272b ;
+  border-bottom:7px groove #26272b ;
+  margin-bottom: 1%;
+}
 
 
 

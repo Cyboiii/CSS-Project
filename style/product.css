@@ -1,7 +1,189 @@
-@import url(./reset.css);* {
-    margin: 0;
-    padding: 0;
+@import url(./reset.css);
+
+
+body{
+  background: #c9cacf;
 }
+
+/* Header */
+#h1Container{
+  display: flex;
+  margin-top: 15pt;
+
+  justify-content: center;
+  align-items: center;
+
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	height: 18%;
+  background: #ffffff;
+  background: -webkit-linear-gradient(90deg, #ffffff 0%, #000000 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #000000 100%);
+  
+}
+
+.logo img {
+  margin-left: 2.3em;
+  max-width: 100%;
+  height: auto !important;
+}
+
+#nav-bar #link {
+	display: flex;
+    flex-flow: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+  list-style-type: none;
+  padding: 10px;
+}
+
+#link li a {
+  padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+  transition: .25s;
+}
+
+#link li a:hover {
+  padding: 10px 20px;
+	background: #8f8f8f;
+	color: #fff;
+  transition: .25s
+}
+
+
+
+
+
+h1{
+  font-size: 40pt;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1%;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  color: #26272b;
+  width: 30%;
+  background-color: aliceblue;
+  border:groove 10px #333;
+}
+
+#container{
+  padding: 20px;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#productimg{
+  width: 30em;
+  height: 25em;
+  padding: 10px;
+  margin: 15px;
+}
+#items{
+  padding: 20px;
+  border-left:2px  solid #333;
+  border-bottom:2px  solid #333;
+  border-right:2px  solid #333;
+  margin: 10px; 
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#itemimg{
+
+  flex-wrap: wrap;
+  padding: 10px;
+  order: 0;
+  float: left;
+}
+#iteminfo{
+  font-size: 15px;
+  padding: 10px;
+}
+#productcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#producttitle{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#iteminfo #mainp{
+  font-weight: 700;
+  width: 90%;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  word-spacing: 5px;
+  margin-bottom: 3%;
+}
+#iteminfo #anotherp{
+  font-weight: 700;
+  width: 90%;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  word-spacing: 5px;
+  /* margin-bottom: 3%; */
+}
+#iteminfo #secondanotherp{
+  font-weight: 700;
+  width: 90%;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  margin-top: 1px;
+  word-spacing: 5px;
+}
+#bold{
+  font-style: italic;
+  font-weight: 600;
+}
+#iteminfo ul li{
+  padding: 5px;
+  /* margin-left: 15px; */
+  list-style-type: disc;
+}
+
+
+button{
+  margin-top: 10px;
+  background: #333;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top:0.5em ;
+  padding-bottom: 0.5em ;  
+  border: #333 5px solid;
+  color: aliceblue;
+  font-size: 17px;
+  transition: 0.25s;
+}
+button:hover{
+  background:#737373;
+  border:#737373 5px solid ;
+  /* color: #333; */
+  border-radius: 25%;
+  transition: 0.25s;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top:1em ;
+  padding-bottom: 1em ;
+}
+
+
+
 
 
 
@@ -144,4 +326,61 @@
 }
 .copyright-text a:hover{
   color:#29aafe
+}
+@media screen and (max-width:900px) {
+
+  #items{
+    display: block;
+  }
+  #itemimg{
+
+    /* flex-wrap: nowrap; */
+    display: block;
+    /* padding: 10px; */
+    order: none;
+    float: none;
+  }  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    }
+    #link li a {
+      padding: 0px 10px;
+      }
+  h1{
+    width: max-content;
+    padding: none;
+    font-size: 30pt;
+  }
+  #nav-bar #link {
+    display:flex;
+    align-items: center;
+    
+    
+  }
+  .logo{
+    display: none;
+  }
+  
+  #link li {
+    width: max-content;
+    
+  }
+  
+  #link li a {
+    display: flex;
+    width: max-content;
+    justify-content: right;
+    color: azure;
+  }
+  #link li a:hover {
+    color: #333;
+  background: #fff;
+}
+
+h1{
+  width: 60%;
+}     
 }
